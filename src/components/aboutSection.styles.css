@@ -1,0 +1,25 @@
+@import "./main.styles.css";
+
+.about-section{
+    width: 100%;
+    display: flex;
+}
+.about-section img {
+    max-width: 30%; /* Make images responsive */
+    height: auto;   /* Maintain aspect ratio */
+    flex: 0 1 20%;
+  }
+.about-section > .about-section-description{
+ flex: 0 0 40%;
+ padding: 3rem;
+
+}
+.about-section > .about-section-description h1{
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.about-section > .about-section-description p{
+    color: var(--Dark-Gray);
+}

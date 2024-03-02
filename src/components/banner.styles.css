@@ -1,0 +1,81 @@
+@import "./main.styles.css";
+
+.banner{
+    display: flex;
+    min-height: 50vh;
+    
+}
+.banner .slide-image{
+    position: relative;
+    flex: 0 1 60%;
+   
+    
+
+}
+.banner .slide-image > img{
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.banner .slide-buttons{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: -130px;
+}
+.banner .slide-buttons button{
+    height: 80px;
+    width: 65px;
+    background-color: var(--Black);
+    padding-left: 2rem;
+    cursor: pointer;
+    border: none;
+
+}
+.banner .slide-buttons button img{
+    width: 16px;
+}
+.banner .slide-description{
+    flex: 0 1 40%;
+    padding: 5rem;
+    padding-bottom: 8rem;
+
+}
+.banner .slide-description h1{
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 3rem;
+    margin-bottom: 1rem;
+}
+.banner .slide-description p {
+    margin: 1rem 0;
+    color: var(--Dark-Gray);
+}
+.banner .slide-description > button{
+    background-color: transparent;
+    border: none;
+    display: flex;
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: .75rem;
+}
+.banner .slide-description > button:hover{
+    cursor: pointer;
+    font-weight: 700;
+}
+.banner .slide-description > button span{
+    margin-right: 1rem;
+}
+.banner .slide-description > button img{
+    margin-top: 5px;
+    transition: all 0.5s ease-out;
+
+}
+.banner .slide-description > button:hover img{
+    margin-left: 12px;
+    transition: all 0.3s ease-out;
+    
+    
+}
+

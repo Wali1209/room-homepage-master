@@ -1,0 +1,61 @@
+@import "./main.styles.css";
+
+.navigation{
+    width: 100%;
+    display: flex;
+    position: fixed;
+    padding-top: 3rem;
+    padding-left: 2rem;
+    z-index: 99;
+  
+    
+}
+/* .navigation.scrolled{
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: all 0.5s ease;
+} */
+
+
+.navigation img{
+ display: none;
+}
+.navigation h1{
+    color: white;
+    margin: 0;
+    padding: 0;
+    
+}
+.navigation ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0%;
+    margin-left: 3rem;
+    line-height: 2.5rem;
+    
+}
+.navigation ul li:not(:first-child){
+    margin-left: 2rem;
+}
+.navigation ul li a{
+    text-decoration: none;
+    color: var(--White);
+    position: relative;
+
+}
+.navigation ul li a::after{
+    content: "";
+    width: 50%;
+    height: 2px;
+    background-color: var(--White);
+    position: absolute;
+    left:25%;
+    bottom: -6px;
+    display: none;
+    transition: all .8s ease;
+
+}
+.navigation ul li:hover a::after{
+ display: block;
+}
+
